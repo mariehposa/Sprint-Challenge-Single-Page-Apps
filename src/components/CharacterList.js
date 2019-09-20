@@ -8,7 +8,8 @@ const characterApi = `https://rickandmortyapi.com/api/character`;
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characterData, setCharacterData] = useState([]);
-  const [url, setUrl] = useState(characterApi)
+  const [url, setUrl] = useState(characterApi);
+  
 
   function search(formValues, actions){
     const term = `?name=${formValues.name}`
