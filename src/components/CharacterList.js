@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
-const characterApi = `https://rick-api.herokuapp.com/api/`;
+const characterApi = `https://rickandmortyapi.com/api/character`;
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -15,7 +15,7 @@ export default function CharacterList() {
         console.log(res.data);
       })
       .catch(err => {
-        console.log(err.message);
+        console.log(err);
       })
   }, []);
 
