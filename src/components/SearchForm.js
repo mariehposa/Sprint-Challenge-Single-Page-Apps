@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Formik, Form, Field} from 'formik';
 
 const initialUserForm = {
-  name: ''
+  name: '',
 }
 
 
@@ -36,10 +36,10 @@ export default function SearchForm() {
                     <Form>
                         <label>
                             Name
-                            <Field name='name' type='text' placeholder='Search here!' />
+                            <Field name='name' type='text' placeholder='Search names here!' />
                             <ErrorMessage name='name' component='div' />
                         </label>
-                        <button type='submit'>Submit</button>
+                        <button type='submit'>Search</button>
                     </Form>
                 )
             }}

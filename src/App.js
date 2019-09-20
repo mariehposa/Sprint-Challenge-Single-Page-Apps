@@ -4,6 +4,7 @@ import CharacterList from './components/CharacterList';
 import { Route } from 'react-router-dom';
 import WelcomePage from './components/WelcomePage';
 import Navigation from './components/Navigation';
+import SearchForm from './components/SearchForm';
 
 export default function App() {
   return (
