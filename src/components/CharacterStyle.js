@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export const CharacterStyle = styled.div`
     display: flex;
@@ -46,4 +46,11 @@ export const StyledLink = styled(Link)`
     color: navy blue;
     font-family: helvetica;
     margin-left: 2rem;
+`
+
+export const StyledButton = styled.button`
+   padding: 1.2rem;
+   border-radius: 2rem;
+   background: green;
+   margin-left: 1rem;
 `
