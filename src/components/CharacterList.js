@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
+
+const characterApi = `https://rick-api.herokuapp.com/api/`;
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -7,6 +10,7 @@ export default function CharacterList() {
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
+    
   }, []);
 
   return (
