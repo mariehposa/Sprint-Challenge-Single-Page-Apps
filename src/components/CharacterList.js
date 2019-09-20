@@ -9,7 +9,8 @@ export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characterData, setCharacterData] = useState([]);
   const [url, setUrl] = useState(characterApi);
-  
+  const [next, setNext] = useState("");
+  const [previous, setPrevious] = useState("");
 
   function search(formValues, actions){
     const term = `?name=${formValues.name}`
