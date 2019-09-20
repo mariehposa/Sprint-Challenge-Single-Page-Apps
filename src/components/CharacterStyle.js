@@ -28,3 +28,10 @@ export const CharacterStyle = styled.div`
         }
     }
 `
+
+export const NavigationStyle = styled.div`
+    display: flex;
+    text-decoration: none;
+    color: navy blue;
+    font-family: helvetica
+`
