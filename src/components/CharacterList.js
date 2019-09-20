@@ -25,7 +25,9 @@ export default function CharacterList() {
     axios.get(url)
       .then(res => {
         console.log(res.data);
-        setCharacterData(res.data.results)
+        setCharacterData(res.data.results);
+        setNext(response.data.next);
+        setPrevious(response.data.prev);
       })
       .catch(err => {
         console.log(err);
