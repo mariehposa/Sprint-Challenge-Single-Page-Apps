@@ -34,12 +34,17 @@ export default function CharacterList() {
       })
   }, [url]);
 
+  function onClicked(newUrl){
+    setUrl(newUrl)
+  }
+
   return (
     <section className="character-list">
       <SearchForm onSubmit={search} />
         {
           characterData.map(character => <CharacterCard key={character.id} person={character} /> )
         }
+        <button onClick={() => }>Previous</button>
     </section>
   );
 }
