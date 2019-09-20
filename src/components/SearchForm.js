@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Formik, Form, Field} from 'formik';
+import { Formik, Form, ErrorMessage, Field} from 'formik';
+import * as yup from "yup";
 
 const initialUserForm = {
   name: '',
@@ -22,7 +23,7 @@ const validation = yup.object().shape({
   name: yup.string().required('Please enter correct name!'),
 })
 
-export default function SearchForm() {
+export default function SearchForm({onSubmit}) {
   return (
     <section className="search-form">
      // Add a search form here
