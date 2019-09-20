@@ -18,6 +18,10 @@ export default function CharacterList() {
     const newUrl = url+term
     console.log(newUrl);
     setUrl(newUrl)
+
+    // const name = formValues.name.toLowerCase();
+    // const newCharacters = characterData.filter(character => character.name.toLowerCase().includes(name))
+    // setCharacterData(newCharacters)
   }
 
   useEffect(() => {
