@@ -4,7 +4,7 @@ import {CharacterStyle} from './CharacterStyle';
 export default function CharacterCard({person}) {
   return (
       <CharacterStyle>
-        <h3>Name: {person.name}</h3>
+        <h2>{person.name}</h2>
         <img src= {person.image} />
         <p>Species: {person.species}</p>
         <p>Gender: {person.gender}</p>

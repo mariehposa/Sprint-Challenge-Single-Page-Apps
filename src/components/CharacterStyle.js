@@ -23,10 +23,10 @@ export const CharacterStyle = styled.div`
        border-radius: 5rem;
    }
 
-    h3{
+    h2{
         color: black;
-        font-family: 'Pacifico', cursive;
-        font-size: 1.5rem;
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
 
         &:hover{
             color: green;
