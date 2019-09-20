@@ -6,7 +6,7 @@ export const CharacterStyle = styled.div`
     flex-direction: column;
     justify-content: space-around;
     margin: 2.5rem;
-    width: 30%;
+    width: 35%;
     border: .2rem solid ;
     border-radius: 2rem ;
     color: blue;
@@ -33,6 +33,11 @@ export const CharacterStyle = styled.div`
             font-size: 1.6rem;
         }
     }
+`
+
+export const ParentStyle = styled.div`
+    display: flex;
+    flex-wrap: wrap;
 `
 
 export const NavigationStyle = styled.div`

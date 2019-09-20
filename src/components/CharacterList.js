@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import CharacterCard from './CharacterCard';
 import SearchForm from './SearchForm';
-import {StyledButton} from './CharacterStyle';
+import {StyledButton, ParentStyle} from './CharacterStyle';
 
 const characterApi = `https://rickandmortyapi.com/api/character`;
 
@@ -42,9 +42,11 @@ export default function CharacterList() {
   return (
     <section className="character-list">
       <SearchForm onSubmit={search} />
-        {
-          characterData.map(character => <CharacterCard key={character.id} person={character} /> )
-        }
+        <ParentStyle>
+          {
+            characterData.map(character => <CharacterCard key={character.id} person={character} /> )
+          }
+        </ParentStyle>
         <StyledButton onClick={() => onClicked(next)}>Next Page</StyledButton>
         <StyledButton onClick={() => onClicked(previous)}>Previous Page</StyledButton>
     </section>
