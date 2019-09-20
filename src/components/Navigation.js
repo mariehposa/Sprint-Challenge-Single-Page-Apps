@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {NavigationStyle} from './CharacterStyle';
+import {NavigationStyle, StyledLink} from './CharacterStyle';
 
 export default function Navigation () {
     return (
         <NavigationStyle>
             <div>
-                <Link to='/'>Welcome Page</Link>
+                <StyledLink to='/'>Welcome Page</StyledLink>
             </div>
             <div>
-                <Link to='/characters'>Character List</Link>
+                <StyledLink to='/characters'>Character List</StyledLink>
             </div>
         </NavigationStyle>
     );
