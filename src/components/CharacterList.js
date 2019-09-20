@@ -26,8 +26,8 @@ export default function CharacterList() {
       .then(res => {
         console.log(res.data);
         setCharacterData(res.data.results);
-        setNext(response.data.next);
-        setPrevious(response.data.prev);
+        setNext(res.data.info.next);
+        setPrevious(res.data.info.prev);
       })
       .catch(err => {
         console.log(err);
@@ -44,7 +44,8 @@ export default function CharacterList() {
         {
           characterData.map(character => <CharacterCard key={character.id} person={character} /> )
         }
-        <button onClick={() => }>Previous</button>
+        <button onClick={() => onClicked(next)}>Next Page</button>
+        <button onClick={() => onClicked(previous)}>Previous Page</button>
     </section>
   );
 }
