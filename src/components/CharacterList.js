@@ -29,13 +29,13 @@ export default function CharacterList() {
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
     axios.get(url)
       .then(res => {
-        console.log(res.data);
+        //console.log(res.data);
         setCharacterData(res.data.results);
         setNext(res.data.info.next);
         setPrevious(res.data.info.prev);
       })
       .catch(err => {
-        console.log(err);
+        //console.log(err);
       })
   }, [url]);
 
